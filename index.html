@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umm-e-Aimen — Web &amp; Mobile Application Developer</title>
+<meta name="description" content="Umm-e-Aimen — Web & Mobile Application Developer specializing in Flutter, React Native and Firebase.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+
+<!-- Ambient animated background -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="orb orb-c"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Header -->
+<header>
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">UA</span>
+        <span class="logo-text">Umm-e-Aimen</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link"><span class="nav-index">01</span>About</a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-index">02</span>Skills</a></li>
+        <li><a href="#projects" class="nav-link"><span class="nav-index">03</span>Projects</a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-index">04</span>Experience</a></li>
+        <li><a href="#resume" class="nav-link"><span class="nav-index">05</span>Resume</a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-index">06</span>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal-up">
+        <h1 class="hero-title">
+          Building <span class="text-gradient">cross-platform</span><br>
+          experiences for mobile &amp; web
+        </h1>
+        <p class="hero-sub">
+          I'm <strong>Umm-e-Aimen</strong> — a <span id="typedRole" class="typed-role"></span><span class="caret">|</span>
+        </p>
+        <p class="hero-desc">
+          Final-year Computer Science undergraduate who ships full products end to end: Flutter &amp; React Native apps
+          wired to Firebase, AI models folded into real workflows, and polished web interfaces built the hard way — with HTML, CSS and JavaScript.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="assets/Umm-e-Aimen_Resume.pdf" class="btn btn-ghost" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-value">4+</span>
+            <span class="meta-label">Featured builds</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-value">3rd</span>
+            <span class="meta-label">Year · Final year in progress</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-value">Flutter · RN</span>
+            <span class="meta-label">Primary stack</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-up delay-15">
+        <div class="device-stack" id="deviceStack">
+          <div class="device device-phone">
+            <div class="device-notch"></div>
+            <div class="device-screen">
+              <div class="app-topbar"><span></span><span></span><span></span></div>
+              <div class="app-card-mini">
+                <div class="pulse-ring"></div>
+                <p class="app-card-title">EduNest</p>
+                <p class="app-card-sub">AI Study Planner</p>
+              </div>
+              <div class="app-row-mini"></div>
+              <div class="app-row-mini short"></div>
+              <div class="app-chip-row">
+                <span class="chip">Flutter</span>
+                <span class="chip">Gemini AI</span>
+              </div>
+            </div>
+          </div>
+          <div class="device device-card card-glass float-slow">
+            <p class="glass-kicker">// building_now</p>
+            <p class="glass-line">Multiple Disease Detection System</p>
+            <div class="glass-tags"><span>Python</span><span>ML</span></div>
+          </div>
+          <div class="device device-card-2 card-glass float-slower">
+            <div class="mini-bars">
+              <div class="mini-bar h-80"></div>
+              <div class="mini-bar h-55"></div>
+              <div class="mini-bar h-92"></div>
+              <div class="mini-bar h-40"></div>
+            </div>
+            <p class="glass-kicker">Firebase &middot; Realtime</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">01 — About</p>
+      <h2 class="section-title reveal-up">Comfortable working end to end.</h2>
+      <div class="about-grid">
+        <p class="about-lead reveal-up">
+          I'm a Web &amp; Mobile Application Developer and final-year Computer Science student, currently completing a
+          Full Stack Web Development internship at <strong>CloudExify</strong>. I like the whole pipeline — DSA and OOP-driven
+          logic on one end, polished, deployed user interfaces on the other — and I'm just as comfortable wiring up a
+          Firebase backend as I am tuning a CSS animation.
+        </p>
+        <div class="about-card card-glass reveal-up delay-10">
+          <h3>What I actually do</h3>
+          <ul class="about-list">
+            <li><span>Ship cross-platform apps</span> in Flutter and React Native, from prototype to store-ready builds.</li>
+            <li><span>Integrate AI &amp; third-party APIs</span> — Gemini, YouTube, MQTT — into real, working features.</li>
+            <li><span>Build complete web products</span>, HTML/CSS/JS up, with design systems and accessibility in mind.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="location-strip reveal-up">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span>Attock, Pakistan</span>
+        <span class="dot-sep">&middot;</span>
+        <a href="mailto:ummeaimen.8663@gmail.com">ummeaimen.8663@gmail.com</a>
+        <span class="dot-sep">&middot;</span>
+        <span>+92 317 5366272</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">02 — Skills</p>
+      <h2 class="section-title reveal-up">Tools I reach for.</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal-up">
+          <h3 class="skill-group-title">Mobile Development</h3>
+          <div class="skill" data-percent="92"><p>Flutter</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="85"><p>React Native</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="78"><p>Expo</p><div class="bar"><div class="fill"></div></div></div>
+        </div>
+
+        <div class="skill-group reveal-up delay-05">
+          <h3 class="skill-group-title">Web Development</h3>
+          <div class="skill" data-percent="88"><p>React</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="94"><p>HTML / CSS</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="90"><p>JavaScript</p><div class="bar"><div class="fill"></div></div></div>
+        </div>
+
+        <div class="skill-group reveal-up delay-10">
+          <h3 class="skill-group-title">Backend &amp; Cloud</h3>
+          <div class="skill" data-percent="90"><p>Firebase</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="82"><p>REST APIs</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="70"><p>MongoDB / SQL</p><div class="bar"><div class="fill"></div></div></div>
+        </div>
+
+        <div class="skill-group reveal-up delay-15">
+          <h3 class="skill-group-title">Languages &amp; Core CS</h3>
+          <div class="skill" data-percent="88"><p>Python</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="75"><p>C++</p><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-percent="80"><p>DSA &amp; OOP</p><div class="bar"><div class="fill"></div></div></div>
+        </div>
+
+      </div>
+
+      <div class="tag-cloud reveal-up">
+        <span class="tag-cloud-label">Also comfortable with</span>
+        <div class="tags">
+          <span class="chip chip-outline">Java (basics)</span>
+          <span class="chip chip-outline">Machine Learning</span>
+          <span class="chip chip-outline">Computer Vision (basics)</span>
+          <span class="chip chip-outline">Gemini AI</span>
+          <span class="chip chip-outline">YouTube API</span>
+          <span class="chip chip-outline">MQTT</span>
+          <span class="chip chip-outline">Git &amp; GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">03 — Projects</p>
+      <h2 class="section-title reveal-up">Selected work.</h2>
+
+      <div class="filter-bar reveal-up" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="flutter">Flutter</button>
+        <button class="filter-btn" data-filter="react-native">React Native</button>
+        <button class="filter-btn" data-filter="firebase">Firebase</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card card-glass tilt-card" data-tags="flutter,react-native,firebase,ai">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">Featured</span>
+            <span class="project-index">01</span>
+          </div>
+          <h3>EduNest</h3>
+          <p class="project-role">AI-Based Student Study Planner</p>
+          <p class="project-desc">
+            A study planner for managing tasks and schedules with Google's Gemini AI folded in for personalized study help,
+            a "Watch Later" layer built on the YouTube API so students save videos without falling into the feed, and an
+            AI-driven mock interview module for interview prep.
+          </p>
+          <div class="project-tags">
+            <span class="chip">Flutter</span><span class="chip">React Native</span><span class="chip">Firebase</span><span class="chip">Gemini AI</span><span class="chip">YouTube API</span>
+          </div>
+        </article>
+
+        <article class="project-card card-glass tilt-card" data-tags="python,ai">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">Featured</span>
+            <span class="project-index">02</span>
+          </div>
+          <h3>Multiple Disease Detection System</h3>
+          <p class="project-role">Applied Machine Learning</p>
+          <p class="project-desc">
+            Built and evaluated multiple ML models to detect diseases from patient data, comparing algorithms
+            head-to-head for accuracy and reliability before settling on the strongest performer.
+          </p>
+          <div class="project-tags">
+            <span class="chip">Python</span><span class="chip">Machine Learning</span>
+          </div>
+        </article>
+
+        <article class="project-card card-glass tilt-card" data-tags="flutter,firebase">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">Featured</span>
+            <span class="project-index">03</span>
+          </div>
+          <h3>Quick Bites</h3>
+          <p class="project-role">Food Ordering &amp; Delivery App</p>
+          <p class="project-desc">
+            An app that helps customers discover nearby restaurants and order available food for doorstep delivery,
+            built on Flutter with a Firebase backend for live data.
+          </p>
+          <div class="project-tags">
+            <span class="chip">Flutter</span><span class="chip">Firebase</span>
+          </div>
+        </article>
+
+        <article class="project-card card-glass tilt-card" data-tags="flutter">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">Featured</span>
+            <span class="project-index">04</span>
+          </div>
+          <h3>Smart Home Controller</h3>
+          <p class="project-role">IoT / MQTT Control App</p>
+          <p class="project-desc">
+            A Flutter app that controls smart-home devices over the MQTT protocol, tested end-to-end with MQTTx
+            to validate real device messaging.
+          </p>
+          <div class="project-tags">
+            <span class="chip">Flutter</span><span class="chip">MQTT</span><span class="chip">Dart</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="additional-projects reveal-up">
+        <h3 class="additional-title">Additional projects</h3>
+        <div class="additional-list">
+          <div class="additional-item">
+            <span class="additional-name">GDG Management App</span>
+            <span class="additional-desc">Management app built for a Google Developer Group chapter.</span>
+          </div>
+          <div class="additional-item">
+            <span class="additional-name">Cookbook</span>
+            <span class="additional-desc">Recipe browsing and cookbook mobile app, built in Flutter.</span>
+          </div>
+          <div class="additional-item">
+            <span class="additional-name">Robo Navigation System</span>
+            <span class="additional-desc">Autonomous navigation logic using AI search &amp; pathfinding algorithms.</span>
+          </div>
+          <div class="additional-item">
+            <span class="additional-name">Student Registration System</span>
+            <span class="additional-desc">Built using core Data Structures &amp; Algorithms concepts.</span>
+          </div>
+          <div class="additional-item">
+            <span class="additional-name">E-Commerce Shopping System</span>
+            <span class="additional-desc">Built using Object-Oriented Programming concepts.</span>
+          </div>
+          <div class="additional-item">
+            <span class="additional-name">Student Management System</span>
+            <span class="additional-desc">Built using OOP and Programming Fundamentals concepts.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">04 — Experience</p>
+      <h2 class="section-title reveal-up">Where I've worked.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card-glass">
+            <div class="timeline-head">
+              <h3>Web &amp; Mobile Development Intern</h3>
+              <span class="timeline-date">Summer 2026</span>
+            </div>
+            <p class="timeline-org">CloudExify</p>
+            <ul class="timeline-list">
+              <li>Designed and deployed a personal portfolio website (HTML5, CSS3, vanilla JavaScript) with a custom design system, dark/light theming, and full accessibility support.</li>
+              <li>Built responsive, cross-device layouts and interactive UI features including live theming, scroll-based animation, and form validation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-block reveal-up">
+        <h3 class="additional-title">Education</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-glass">
+              <div class="timeline-head">
+                <h3>B.S. Computer Science</h3>
+                <span class="timeline-date">3 years complete &middot; final year in progress</span>
+              </div>
+              <p class="timeline-org">COMSATS University Islamabad, Attock Campus</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-glass">
+              <div class="timeline-head">
+                <h3>F.Sc. (Intermediate)</h3>
+              </div>
+              <p class="timeline-org">Army Public School and College for Girls, Attock Cantt</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-glass">
+              <div class="timeline-head">
+                <h3>Matriculation</h3>
+              </div>
+              <p class="timeline-org">F.G. Public High School, Attock Cantt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">05 — Resume</p>
+      <h2 class="section-title reveal-up">Everything in one document.</h2>
+      <div class="resume-panel card-glass reveal-up">
+        <div class="resume-panel-info">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+          <div>
+            <p class="resume-panel-title">Umm-e-Aimen_Resume.pdf</p>
+            <p class="resume-panel-sub">Full work history, projects &amp; skills — updated 2026</p>
+          </div>
+        </div>
+        <div class="resume-panel-actions">
+          <a href="assets/Umm-e-Aimen_Resume.pdf" class="btn btn-primary" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            <span>Download PDF</span>
+          </a>
+          <a href="assets/Umm-e-Aimen_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+            <span>Open in new tab</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal-up">
+        <p class="section-eyebrow">06 — Contact</p>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="contact-desc">
+          Have an internship, freelance project, or a hackathon team that needs a mobile/web developer?
+          My inbox is open.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ummeaimen.8663@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            ummeaimen.8663@gmail.com
+          </a>
+          <a href="tel:+923175366272" class="contact-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +92 317 5366272
+          </a>
+          <a href="https://github.com/Umme-Aimen-8663" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/Umme-Aimen-8663
+          </a>
+          <a href="https://linkedin.com/in/umm-e-aimen8663" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/umm-e-aimen8663
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form card-glass reveal-up delay-10" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+          <span class="form-error" id="err-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+          <span class="form-error" id="err-email"></span>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about the project..."></textarea>
+          <span class="form-error" id="err-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span>Send Message</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="logo-mark">UA</span>
+      <p>Designed &amp; built by Umme Aimen </p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/Umme-Aimen-8663" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/umm-e-aimen8663" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:ummeaimen.8663@gmail.com">Email</a>
+    </div>
+    <p class="footer-year">&copy; <span id="year"></span> Umm-e-Aimen</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
