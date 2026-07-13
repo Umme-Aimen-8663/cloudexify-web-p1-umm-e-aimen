@@ -297,6 +297,20 @@ html[data-theme="dark"] .icon-moon { opacity: 1; transform: rotate(0) scale(1); 
   .nav-links.active { opacity: 1; visibility: visible; transform: translateY(0); }
   .nav-link { width: 100%; padding: 14px 16px; border-radius: 14px; justify-content: space-between; }
   .hero-visual { pointer-events: none; }
+  .hero {
+    align-items: flex-start;
+    padding: 116px 0 56px;
+  }
+  .hero-grid {
+    gap: 34px;
+  }
+  .hero-visual {
+    height: 300px;
+  }
+  .hero-actions .btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
 }
 
 /* ---------- Buttons ---------- */
