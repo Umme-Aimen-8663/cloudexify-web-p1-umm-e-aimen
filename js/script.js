@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.classList.toggle('active', isOpen);
     navLinks.classList.toggle('active', isOpen);
     hamburger.setAttribute('aria-expanded', String(isOpen));
+    hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    document.body.classList.toggle('nav-open', isOpen);
   }
 
   hamburger.addEventListener('click', () => {

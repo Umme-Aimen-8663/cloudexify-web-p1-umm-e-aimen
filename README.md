@@ -15,9 +15,10 @@ This portfolio is a fully responsive single-page website designed to present exp
 
 ## Preview
 
-Project screenshot:
+Project screenshots:
 
 - [Web view screenshot](screenshots/web-view.png)
+- [Mobile view screenshot](screenshots/mobile-view.jpeg)
 
 ## Key Features
 
@@ -69,7 +70,8 @@ portfolio/
 │   └── script.js
 ├── assets/
 ├── screenshots/
-│   └── web-view.png
+│   ├── web-view.png
+│   └── mobile-view.jpeg
 └── README.md
 ```
 
