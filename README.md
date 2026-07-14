@@ -4,10 +4,16 @@ Professional personal portfolio for the CloudExify Full Stack Web Development in
 
 ## Project Details
 
-- Name: Umm-e-Aimen
-- Registration No: CX-INT-2026-GEN-0483
-- Live Vercel Deployment: https://cloudexify-web-p1-umm-e-aimen.vercel.app/
-- Stack: HTML5, CSS3, Vanilla JavaScript
+- **Name:** Umm-e-Aimen
+- **Registration No:** CX-INT-2026-GEN-0483
+- **Build Track Chosen:** Glass & Gradient
+- **Signature Features Implemented:**
+  - Live Theme Switcher (with localStorage persistence)
+  - Typewriter Hero Intro Effect
+  - Scroll-triggered Animated Skill Bars
+  - Live Project Filter by Category
+- **Live Vercel Deployment:** https://cloudexify-web-p1-umm-e-aimen.vercel.app/
+- **Stack:** HTML5, CSS3, Vanilla JavaScript
 
 ## Overview
 
@@ -16,7 +22,6 @@ This portfolio is a fully responsive single-page website designed to present exp
 ## Preview
 
 Project screenshots:
-
 - [Web view screenshot](screenshots/web-view.png)
 - [Mobile view screenshot](screenshots/mobile-view.jpeg)
 
@@ -49,34 +54,3 @@ Open `index.html` directly in a browser or use any static server.
 
 ```bash
 npx serve .
-```
-
-## Deployment
-
-The project is deployed on Vercel at:
-
-https://cloudexify-web-p1-umm-e-aimen.vercel.app/
-
-If you want to redeploy, connect the repository to Vercel as a static site and publish the root folder.
-
-## File Structure
-
-```text
-portfolio/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── assets/
-├── screenshots/
-│   ├── web-view.png
-│   └── mobile-view.jpeg
-└── README.md
-```
-
-## Notes
-
-- Fully responsive across mobile, tablet, and desktop viewports.
-- Animations respect reduced-motion preferences where supported.
-- Designed for a clean internship submission with a professional presentation.
